@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e360cd5776ed2b24aa2142ae8e2d6ae7
+guid: 8bc655d4d59e722458c799f1e658e0ba
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,8 @@ TrueTypeFontImporter:
   fontName: Across The Stars
   fontNames:
   - Across The Stars
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3901d39aeed39bc48b90f901a005d00a, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

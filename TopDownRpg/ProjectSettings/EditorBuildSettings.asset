@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level_0_rest_area_scene.unity
     guid: d04fd616a95d08946a47ef17cb312ac7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/gameover_scene.unity
+    guid: c57a502920af70b49887d34e62ca3818
   m_configObjects: {}
