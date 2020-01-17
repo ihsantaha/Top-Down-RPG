@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/level_0_rest_area_scene.unity
-  isLoaded: 1
-  isActive: 1
