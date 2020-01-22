@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Item
   - BadObject
+  - DialogBox
+  - Exit
+  - Bed
+  - DialogLoader
+  - Dialog
   layers:
   - Default
   - TransparentFX

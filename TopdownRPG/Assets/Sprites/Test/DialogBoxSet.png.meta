@@ -1,0 +1,931 @@
+fileFormatVersion: 2
+guid: 4fecc980ab6d14d4090e7070f222d9d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 915569476658966395
+    second: DialogBoxSet_0
+  - first:
+      213: -400753775851342222
+    second: DialogBoxSet_1
+  - first:
+      213: 6932716155954006084
+    second: DialogBoxSet_2
+  - first:
+      213: 2334056062541906945
+    second: DialogBoxSet_3
+  - first:
+      213: 3509364675985578106
+    second: DialogBoxSet_4
+  - first:
+      213: 6326865538951535235
+    second: DialogBoxSet_5
+  - first:
+      213: 7521658425229290662
+    second: DialogBoxSet_6
+  - first:
+      213: -654991553133497461
+    second: DialogBoxSet_7
+  - first:
+      213: -3377336768441335917
+    second: DialogBoxSet_8
+  - first:
+      213: 394111978908355668
+    second: DialogBoxSet_9
+  - first:
+      213: -338440642262467085
+    second: DialogBoxSet_10
+  - first:
+      213: -1095398458587461366
+    second: DialogBoxSet_11
+  - first:
+      213: -577127998516595632
+    second: DialogBoxSet_12
+  - first:
+      213: -7648123872421788487
+    second: DialogBoxSet_13
+  - first:
+      213: -5963776290759215143
+    second: DialogBoxSet_14
+  - first:
+      213: 8560137522572933729
+    second: DialogBoxSet_15
+  - first:
+      213: -1357189720829806007
+    second: DialogBoxSet_16
+  - first:
+      213: -7351105689476742205
+    second: DialogBoxSet_17
+  - first:
+      213: -1326575647203783533
+    second: DialogBoxSet_18
+  - first:
+      213: -8956804846743591502
+    second: DialogBoxSet_19
+  - first:
+      213: -6772732061097727350
+    second: DialogBoxSet_20
+  - first:
+      213: -83301668759170409
+    second: DialogBoxSet_21
+  - first:
+      213: 4996048436551828500
+    second: DialogBoxSet_22
+  - first:
+      213: 1178802896149762896
+    second: DialogBoxSet_23
+  - first:
+      213: -2188792050771883060
+    second: DialogBoxSet_24
+  - first:
+      213: 2298430630376738166
+    second: DialogBoxSet_25
+  - first:
+      213: -7750262260040449698
+    second: DialogBoxSet_26
+  - first:
+      213: 9120758658198456523
+    second: DialogBoxSet_27
+  - first:
+      213: 8942226333742560948
+    second: DialogBoxSet_28
+  - first:
+      213: -7454849106821650624
+    second: DialogBoxSet_29
+  - first:
+      213: 696962669810695271
+    second: DialogBoxSet_30
+  - first:
+      213: -5143603278881685165
+    second: DialogBoxSet_31
+  - first:
+      213: -4702926912874060100
+    second: DialogBoxSet_32
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DialogBoxSet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfd1a5d52a12d7419cb72f04e7bbfb1
+      internalID: 915569476658966395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8736b99ca4f6a9c4bb60eba82037fcc9
+      internalID: -400753775851342222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de41d574a57483a4897b889daa64e435
+      internalID: 6932716155954006084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faf401492b89f24b8b93a2a311b7540
+      internalID: 2334056062541906945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c5632256dca5d4ebf468245a870687
+      internalID: 3509364675985578106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68aaa4c4117ccff4e88021a389b4364b
+      internalID: 6326865538951535235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44586d511b3705444a0dec5340126b8b
+      internalID: 7521658425229290662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5dd2f10045b544c9db9f6ecad3e87e
+      internalID: -654991553133497461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2693e69e7d5dcc41922bd6a9aa7c3b4
+      internalID: -3377336768441335917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78242c0ca2d7da147b0debe126a8dac8
+      internalID: 394111978908355668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 952
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995feeac6ea388c469ed76d2fa3d391c
+      internalID: -338440642262467085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512361baf7eeac345ad2798d8bbb6e95
+      internalID: -1095398458587461366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01e4f585bd078546a120e7e43a24008
+      internalID: -577127998516595632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0d6060747cbcc4cb69ff86dca7d4a8
+      internalID: -7648123872421788487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab60fa1f600d69741a8faab7d370b1d3
+      internalID: -5963776290759215143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68abc17ac7cb6494d8430f26f8cde88e
+      internalID: 8560137522572933729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ac3423c03b2041bd651567e5b4c32
+      internalID: -1357189720829806007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_17
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224cbdc731cfd1447853620f0465227b
+      internalID: -7351105689476742205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_18
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169fc6f20faf71446b9b65351b27cea3
+      internalID: -1326575647203783533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ec1c0ceffbe8a4498ada93364f685d
+      internalID: -8956804846743591502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_20
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6254f5d130011c498306d586b67b195
+      internalID: -6772732061097727350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 824
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132166ad31752fe4e8a2d3c946e427d4
+      internalID: -83301668759170409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be94997e02fc0ca4ea0fa5b90d0cecc6
+      internalID: 4996048436551828500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662bf239e7ddcf6438d23ea81c53358d
+      internalID: 1178802896149762896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eed360618f88c40af79365a53e76d1
+      internalID: -2188792050771883060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420b4a27cc6550c48a8f89934e492390
+      internalID: 2298430630376738166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96c78e32e291504aacf1f8587c66d79
+      internalID: -7750262260040449698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598267aad81259f4a823da927a8b7e9a
+      internalID: 9120758658198456523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d8e944ddcd42d4d8d04284185fe021
+      internalID: 8942226333742560948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_29
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae96a2422d61b349ae72bae5c4d408a
+      internalID: -7454849106821650624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_30
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bd7b8f0bc28434593635ee2beca47a
+      internalID: 696962669810695271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_31
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b84af82cb7ab2d43aa4fd362d6a50ea
+      internalID: -5143603278881685165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogBoxSet_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 696
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c22bd7b16faf9e4a93f0840d58ae77e
+      internalID: -4702926912874060100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
