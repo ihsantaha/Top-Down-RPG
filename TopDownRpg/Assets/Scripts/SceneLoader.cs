@@ -5,15 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void LoadNextScene()
+    int currentSceneIndex;
+
+    void Start()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    }
+
+    public void LoadNextScene()
+    {    
         SceneManager.LoadSceneAsync(currentSceneIndex + 1);
     }
 
     public void LoadPreviousScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadSceneAsync(currentSceneIndex - 1);
     }
 
@@ -22,8 +27,27 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(buildIndex);
     }
 
+    public void CloseMenu()
+    {
+        SceneManager.LoadSceneAsync(StaticClass.CurrentScene);
+    }
+
     public void Quit()
     {
         Application.Quit();
+    }
+
+    // All Scene Transitions Determined by Exit Number
+    public void NavigateFrom(int exitNumber)
+    {
+        if (exitNumber == 3)
+        {
+            SceneManager.LoadSceneAsync(StaticClass.PreviousScene);
+            StaticClass.PreviousScene = 3;
+        }
+        if (exitNumber == 2)
+            SceneManager.LoadSceneAsync(4);
+        if (exitNumber == 1)
+            SceneManager.LoadSceneAsync(5);
     }
 }

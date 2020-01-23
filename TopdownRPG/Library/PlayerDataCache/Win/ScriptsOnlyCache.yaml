@@ -2,16 +2,33 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Boundaries
+    - DialogLoader
+    - Exit
+    - InitialPosition
+    - Menu
+    - MenuButton
     - Options
     - PlayerCollision
     - PlayerMovement
     - SceneLoader
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
+    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    Unity.2D.Tilemap.Extras.Editor.dll:
+    - UnityEditor.Tilemaps.CoordinateBrush
+    - UnityEditor.Tilemaps.GameObjectBrush
+    - UnityEditor.Tilemaps.GroupBrush
+    - UnityEditor.Tilemaps.LineBrush
+    - UnityEditor.Tilemaps.RandomBrush
+    - UnityEditor.Tilemaps.TintBrush
+    - UnityEditor.Tilemaps.TintBrushSmooth
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
@@ -21,6 +38,7 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -49,21 +67,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9698}
     - Class: 114
-      Script: {instanceID: 9908}
+      Script: {instanceID: 9910}
     - Class: 114
-      Script: {instanceID: 10330}
+      Script: {instanceID: 10334}
     - Class: 114
-      Script: {instanceID: 10732}
+      Script: {instanceID: 10740}
     - Class: 114
-      Script: {instanceID: 10964}
+      Script: {instanceID: 10974}
     - Class: 114
-      Script: {instanceID: 11104}
+      Script: {instanceID: 11114}
     - Class: 114
-      Script: {instanceID: 11180}
+      Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -93,18 +111,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9984}
+      Script: {instanceID: 600}
     - Class: 114
-      Script: {instanceID: 10632}
+      Script: {instanceID: 9698}
     - Class: 114
-      Script: {instanceID: 10638}
+      Script: {instanceID: 9736}
     - Class: 114
-      Script: {instanceID: 11104}
+      Script: {instanceID: 9910}
+    - Class: 114
+      Script: {instanceID: 9986}
+    - Class: 114
+      Script: {instanceID: 10112}
+    - Class: 114
+      Script: {instanceID: 10334}
+    - Class: 114
+      Script: {instanceID: 10340}
+    - Class: 114
+      Script: {instanceID: 10640}
+    - Class: 114
+      Script: {instanceID: 10646}
+    - Class: 114
+      Script: {instanceID: 10740}
+    - Class: 114
+      Script: {instanceID: 11114}
+    - Class: 114
+      Script: {instanceID: 11254}
+    - Class: 114
+      Script: {instanceID: 11290}
+    - Class: 114
+      Script: {instanceID: 11660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -113,11 +155,123 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
     - Class: 483693784
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/level_0_tent_scene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9698}
+    - Class: 114
+      Script: {instanceID: 9736}
+    - Class: 114
+      Script: {instanceID: 9910}
+    - Class: 114
+      Script: {instanceID: 9986}
+    - Class: 114
+      Script: {instanceID: 10112}
+    - Class: 114
+      Script: {instanceID: 10334}
+    - Class: 114
+      Script: {instanceID: 10340}
+    - Class: 114
+      Script: {instanceID: 10640}
+    - Class: 114
+      Script: {instanceID: 10646}
+    - Class: 114
+      Script: {instanceID: 10740}
+    - Class: 114
+      Script: {instanceID: 11114}
+    - Class: 114
+      Script: {instanceID: 11254}
+    - Class: 114
+      Script: {instanceID: 11660}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/menu_scene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9698}
+    - Class: 114
+      Script: {instanceID: 10334}
+    - Class: 114
+      Script: {instanceID: 10754}
+    - Class: 114
+      Script: {instanceID: 10974}
+    - Class: 114
+      Script: {instanceID: 11114}
+    - Class: 114
+      Script: {instanceID: 11190}
+    - Class: 114
+      Script: {instanceID: 11254}
+    - Class: 114
+      Script: {instanceID: 11660}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/options_scene.unity:
     - Class: 1
@@ -139,19 +293,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9698}
     - Class: 114
-      Script: {instanceID: 9908}
+      Script: {instanceID: 9910}
     - Class: 114
-      Script: {instanceID: 10330}
+      Script: {instanceID: 10334}
     - Class: 114
-      Script: {instanceID: 10354}
+      Script: {instanceID: 10360}
     - Class: 114
-      Script: {instanceID: 10964}
+      Script: {instanceID: 10974}
     - Class: 114
-      Script: {instanceID: 11180}
+      Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -188,29 +342,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9698}
     - Class: 114
-      Script: {instanceID: 9908}
+      Script: {instanceID: 9910}
     - Class: 114
-      Script: {instanceID: 10330}
+      Script: {instanceID: 10334}
     - Class: 114
-      Script: {instanceID: 10356}
+      Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10732}
+      Script: {instanceID: 10740}
     - Class: 114
-      Script: {instanceID: 10964}
+      Script: {instanceID: 10974}
     - Class: 114
-      Script: {instanceID: 10978}
+      Script: {instanceID: 10988}
     - Class: 114
-      Script: {instanceID: 11104}
+      Script: {instanceID: 11114}
     - Class: 114
-      Script: {instanceID: 11180}
+      Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11546}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -236,6 +390,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 83e769eee07fc231384c812eedbb8224
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuButton
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -382,6 +542,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: 0def6e19aa159c44f132b5576b24db98
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Exit
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -434,6 +600,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: ccf6b7076703e7aeab9def7c75ec49c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InitialPosition
   - hash:
       serializedVersion: 2
       Hash: dd7520b7d4e690e8c593273e7b9fbe80
@@ -526,7 +698,7 @@ ScriptsOnlyBuild:
     className: Boundaries
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: b47774fd911878c8d9ab84f3b82cd2aa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCollision
@@ -566,6 +738,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: bd12787258a31484a3fdddd9e932174c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
   - hash:
       serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
@@ -760,6 +938,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: fe27af227e6abf9fbf42118d18ca5272
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DialogLoader
+  - hash:
+      serializedVersion: 2
       Hash: 4d16cfbaa8e821a2b370e80844a0e9bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -942,6 +1126,8 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/splash_scene.unity
   - Assets/Scenes/options_scene.unity
-  - Assets/Scenes/level_0_rest_area_scene.unity
   - Assets/Scenes/gameover_scene.unity
+  - Assets/Scenes/menu_scene.unity
+  - Assets/Scenes/level_0_rest_area_scene.unity
+  - Assets/Scenes/level_0_tent_scene.unity
   playerPath: C:/Users/ihsan/Desktop/Repo/Games/Topdown/gamedevelopment/TopdownRPG/Build/TopdownRPG.exe
