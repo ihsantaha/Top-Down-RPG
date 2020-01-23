@@ -4,63 +4,71 @@ using UnityEngine;
 
 public class DialogLoader : MonoBehaviour
 {
+    public GameObject player;
     public GameObject dialogBox;
     public GameObject dialog;
-    public GameObject player;
     public bool activate;
     public bool currentStateIsOpen;
+    public int currentDialogTextIndex;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        dialogBox = GameObject.FindGameObjectWithTag("DialogBox");
+        dialogBox.GetComponent<Transform>().position = Vector2.right * 1000;
     }
 
     void Update()
     {
-        CheckActivation();
-        CheckDeactivation();
+        IsOpenable();
+        OpenDialog();
+        ManageDialog();
     }
 
-    public void CheckActivation()
+    public bool IsOpenable()
     {
+        RaycastHit2D playerHitFromLeft = Physics2D.Raycast(transform.position, Vector2.left, 0.55f, 1 << 8);
+        RaycastHit2D playerHitFromTop = Physics2D.Raycast(transform.position, Vector2.up, 0.55f, 1 << 8);
+        RaycastHit2D playerHitFromRight = Physics2D.Raycast(transform.position, Vector2.right, 0.55f, 1 << 8);
+        RaycastHit2D playerHitFromBottom = Physics2D.Raycast(transform.position, Vector2.left, 0.55f, 1 << 8);
 
-        if (player.GetComponent<PlayerCollision>().attemptToSleep)
-        {
-            OpenDialog();
-            player.GetComponent<PlayerCollision>().attemptToSleep = false;
-        }
+        return (playerHitFromLeft.collider != null || playerHitFromTop.collider != null || playerHitFromRight.collider != null || playerHitFromBottom.collider != null) ? true : false;
     }
 
     public void OpenDialog()
     {
-        if (!currentStateIsOpen)
+        if (IsOpenable() && !currentStateIsOpen && Input.GetKeyDown(KeyCode.X))
         {
-            Instantiate(dialogBox, Vector3.zero, transform.rotation);
-            Instantiate(dialog, Vector3.zero, transform.rotation);
             currentStateIsOpen = true;
+            currentDialogTextIndex = 1;
+            dialogBox.GetComponent<Transform>().position = Vector2.zero;
+            Instantiate(dialog, Vector3.zero, transform.rotation);
+            dialog.GetComponent<Dialog>().textComponent.text = dialog.GetComponent<Dialog>().dialogTextSet[0];
+            player.GetComponent<PlayerMovement>().moveSpeed = 0;
         }
     }
 
-    public void CheckDeactivation()
+    public void ManageDialog()
     {
-        if (currentStateIsOpen) {
-            player.GetComponent<PlayerMovement>().moveSpeed = 0;
-            if (Input.GetKeyDown(KeyCode.N))
-            {
-                CloseDialog();
-                currentStateIsOpen = false;
-                player.GetComponent<PlayerMovement>().moveSpeed = 5f;
-            }
+        if (currentStateIsOpen && currentDialogTextIndex < dialog.GetComponent<Dialog>().dialogTextSet.Length && Input.GetKeyDown(KeyCode.N))
+        {
+            dialog.GetComponent<Dialog>().textComponent.text = dialog.GetComponent<Dialog>().dialogTextSet[currentDialogTextIndex];
+            currentDialogTextIndex++;
+        }
+        else if (currentStateIsOpen && currentDialogTextIndex >= dialog.GetComponent<Dialog>().dialogTextSet.Length && Input.GetKeyDown(KeyCode.N))
+        {
+            currentDialogTextIndex = 1;
+            CloseDialog();
         }
     }
 
     public void CloseDialog()
     {
-        Destroy(GameObject.FindGameObjectWithTag("DialogBox"));
-    }
+        currentStateIsOpen = false;
+        dialogBox.GetComponent<Transform>().position = Vector2.right*10000;
+        dialog.GetComponent<Dialog>().textComponent.text = "";
+        player.GetComponent<PlayerMovement>().moveSpeed = 5f;
+        currentDialogTextIndex = 1;
 
-    public void Accept()
-    {
-        Debug.Log("Next Action (Go to next set of text or got to sleep)");
     }
 }
