@@ -9,19 +9,22 @@ public class DialogLoader : MonoBehaviour
     public GameObject dialog;
     public bool activate;
     public bool currentStateIsOpen;
+    public bool decisionPoint;
     public int currentDialogTextIndex;
+    public int objectID;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         dialogBox = GameObject.FindGameObjectWithTag("DialogBox");
         dialogBox.GetComponent<Transform>().position = Vector2.right * 1000;
+        objectID = GetComponent<ObjectID>().ID;
     }
 
     void Update()
     {
         IsOpenable();
-        OpenDialog();
+        OpenDialog(objectID);
         ManageDialog();
     }
 
@@ -35,30 +38,41 @@ public class DialogLoader : MonoBehaviour
         return (playerHitFromLeft.collider != null || playerHitFromTop.collider != null || playerHitFromRight.collider != null || playerHitFromBottom.collider != null) ? true : false;
     }
 
-    public void OpenDialog()
+    public void OpenDialog(int objID)
     {
+        var dialogTextSet = dialog.GetComponent<Dialog>().dialogTextSetList[getDialog(objectID)];
+
         if (IsOpenable() && !currentStateIsOpen && Input.GetKeyDown(KeyCode.X))
         {
             currentStateIsOpen = true;
-            currentDialogTextIndex = 1;
+            currentDialogTextIndex = getDialog(objectID);
             dialogBox.GetComponent<Transform>().position = Vector2.zero;
             Instantiate(dialog, Vector3.zero, transform.rotation);
-            dialog.GetComponent<Dialog>().textComponent.text = dialog.GetComponent<Dialog>().dialogTextSet[0];
+            dialog.GetComponent<Dialog>().textComponent.text = dialogTextSet.dialogText;
             player.GetComponent<PlayerMovement>().moveSpeed = 0;
         }
     }
 
     public void ManageDialog()
     {
-        if (currentStateIsOpen && currentDialogTextIndex < dialog.GetComponent<Dialog>().dialogTextSet.Length && Input.GetKeyDown(KeyCode.N))
+        var dialogTextSetList = dialog.GetComponent<Dialog>().dialogTextSetList;
+
+        if (currentStateIsOpen)
         {
-            dialog.GetComponent<Dialog>().textComponent.text = dialog.GetComponent<Dialog>().dialogTextSet[currentDialogTextIndex];
-            currentDialogTextIndex++;
-        }
-        else if (currentStateIsOpen && currentDialogTextIndex >= dialog.GetComponent<Dialog>().dialogTextSet.Length && Input.GetKeyDown(KeyCode.N))
-        {
-            currentDialogTextIndex = 1;
-            CloseDialog();
+            if (dialogTextSetList[currentDialogTextIndex].isEndPoint && Input.GetKeyDown(KeyCode.N))
+            {
+                CloseDialog();
+            }
+            else if (dialogTextSetList[currentDialogTextIndex].isDecisionPoint && Input.GetKeyDown(KeyCode.O))
+            {
+                dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[getDialog(currentDialogTextIndex)].dialogText;
+                currentDialogTextIndex = getDialog(currentDialogTextIndex);
+            }
+            else if (Input.GetKeyDown(KeyCode.N))
+            {
+                currentDialogTextIndex++;
+                dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[currentDialogTextIndex].dialogText;
+            }
         }
     }
 
@@ -68,7 +82,16 @@ public class DialogLoader : MonoBehaviour
         dialogBox.GetComponent<Transform>().position = Vector2.right*10000;
         dialog.GetComponent<Dialog>().textComponent.text = "";
         player.GetComponent<PlayerMovement>().moveSpeed = 5f;
-        currentDialogTextIndex = 1;
+    }
 
+    // Dialog object IDs
+    public int getDialog(int id)
+    {
+        if (id == 0)
+            return 0;
+        if (id == 2)
+            return 5;
+
+        return dialog.GetComponent<Dialog>().dialogTextSetList.Length - 1;
     }
 }
