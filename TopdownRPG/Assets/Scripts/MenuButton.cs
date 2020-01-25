@@ -16,7 +16,6 @@ public class MenuButton : MonoBehaviour
     public void OpenMenu()
     {
         StaticClass.CurrentPosition = player.transform.position;
-        print(StaticClass.CurrentPosition);
         SceneManager.LoadSceneAsync(3);
     }
 }
