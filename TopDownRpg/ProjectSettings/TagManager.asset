@@ -17,6 +17,8 @@ TagManager:
   - SkillsSubMenu
   - OptionsSubMenu
   - ReturnTab
+  - StartButton
+  - QuitButton
   layers:
   - Default
   - TransparentFX

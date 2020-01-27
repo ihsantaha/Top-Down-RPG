@@ -13,7 +13,7 @@ public class Options : MonoBehaviour {
     public void returnFromOptions()
     {
 
-        if (Input.GetKeyDown(KeyCode.C)) {
+        if (Input.GetButtonDown("B Button")) {
             if (StaticClass.CurrentScene > 3)
                 SceneManager.LoadSceneAsync(3);
             else

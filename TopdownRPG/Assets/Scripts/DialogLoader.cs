@@ -16,6 +16,7 @@ public class DialogLoader : MonoBehaviour
 
     void Start()
     {
+        decisionPointID = 0;
         player = GameObject.FindGameObjectWithTag("Player");
         dialogBox = GameObject.FindGameObjectWithTag("DialogBox");
         dialogBox.GetComponent<Transform>().position = new Vector3(1000, -3, 0);
