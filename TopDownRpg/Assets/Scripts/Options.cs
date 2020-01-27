@@ -7,9 +7,18 @@ public class Options : MonoBehaviour {
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            SceneManager.LoadSceneAsync(0);
+        returnFromOptions();
+    }
+
+    public void returnFromOptions()
+    {
+
+        if (Input.GetKeyDown(KeyCode.C)) {
+            if (StaticClass.CurrentScene > 3)
+                SceneManager.LoadSceneAsync(3);
+            else
+                SceneManager.LoadSceneAsync(0);
         }
     }
+      
 }

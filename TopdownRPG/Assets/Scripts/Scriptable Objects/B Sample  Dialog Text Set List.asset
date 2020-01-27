@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d238d09e3e3a4a74c89aef3d5bd0b183, type: 3}
+  m_Name: B Sample  Dialog Text Set List
+  m_EditorClassIdentifier: 
+  dialogText: 
+  isDecisionPoint: 0
+  isEndPoint: 0
+  dialogTextSetList:
+  - {fileID: 11400000, guid: e019af9c0dca0564780878f5ff6bff4b, type: 2}
+  - {fileID: 11400000, guid: c3d430bbd799eae4f9d0d9cc803fefcf, type: 2}
+  - {fileID: 11400000, guid: c249228250915fc4ca9bf16f484f7ba6, type: 2}
+  - {fileID: 11400000, guid: 076840c0241676f48b77bb6ecca9aa07, type: 2}
+  - {fileID: 11400000, guid: 2944128dceb75f2439488b87ec0bbd66, type: 2}
+  - {fileID: 11400000, guid: f3afdc5ca5758c241babf47a37bf0466, type: 2}
+  - {fileID: 11400000, guid: 9695088ef7374ed47a781a1242252dc0, type: 2}

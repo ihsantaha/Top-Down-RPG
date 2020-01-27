@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Boundaries.cs" />
      <Compile Include="Assets\Scripts\Dialog.cs" />
      <Compile Include="Assets\Scripts\DialogLoader.cs" />
+     <Compile Include="Assets\Scripts\DialogTextSet.cs" />
      <Compile Include="Assets\Scripts\DynamicText.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\InitialPosition.cs" />
