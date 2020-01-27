@@ -11,6 +11,15 @@ TagManager:
   - Bed
   - DialogLoader
   - Dialog
+  - MenuBox
+  - StatsSubMenu
+  - InventorySubMenu
+  - SkillsSubMenu
+  - OptionsSubMenu
+  - ReturnTab
+  - StartButton
+  - QuitButton
+  - RestartButton
   layers:
   - Default
   - TransparentFX
