@@ -40,28 +40,11 @@ public class DialogLoader : MonoBehaviour
         return (playerHitFromLeft.collider != null || playerHitFromTop.collider != null || playerHitFromRight.collider != null || playerHitFromBottom.collider != null) ? true : false;
     }
 
-    /*
-    public void OpenDialog(int objectID)
-    {
-        var dialogTextSet = dialog.GetComponent<Dialog>().dialogTextSetList[getDialog(objectID)];
-
-        if (IsOpenable() && !currentStateIsOpen && Input.GetKeyDown(KeyCode.X))
-        {
-            currentStateIsOpen = true;
-            currentDialogTextIndex = getDialog(objectID);    
-            dialogBox.GetComponent<Transform>().position = Vector2.zero;
-            Instantiate(dialog, Vector3.zero, transform.rotation);
-            player.GetComponent<PlayerMovement>().moveSpeed = 0;
-            dialog.GetComponent<Dialog>().textComponent.text = dialogTextSet.dialogText;
-        }
-    }
-    */
-
     public void OpenDialog(int objID, int decPointID)
     {
         var dialogTextSet = dialog.GetComponent<Dialog>().dialogTextSetList[getDialog(objID,decPointID)];
 
-        if (IsOpenable() && !currentStateIsOpen && Input.GetKeyDown(KeyCode.X))
+        if (IsOpenable() && !currentStateIsOpen && Input.GetButton("X Button"))
         {
             currentStateIsOpen = true;
             currentDialogTextIndex = getDialog(objectID, decPointID);
@@ -83,21 +66,16 @@ public class DialogLoader : MonoBehaviour
 
         if (currentStateIsOpen)
         {
-            if (dialogTextSetList[currentDialogTextIndex].isEndPoint && Input.GetKeyDown(KeyCode.N))
+            if (dialogTextSetList[currentDialogTextIndex].isEndPoint && Input.GetButtonDown("A Button"))
             {
                 CloseDialog();
             }
-            else if (dialogTextSetList[currentDialogTextIndex].isDecisionPoint && Input.GetKeyDown(KeyCode.O))
+            else if (dialogTextSetList[currentDialogTextIndex].isDecisionPoint && Input.GetButtonDown("X Button"))
             {
-                /***/
                 dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[getDialog(objectID, currentDialogTextIndex)].dialogText;
                 currentDialogTextIndex = getDialog(objectID, currentDialogTextIndex);
-                
-                /***/
-                //dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[getDialog(currentDialogTextIndex)].dialogText; // 1- Get the corresponding dialog text set
-                //currentDialogTextIndex = getDialog(currentDialogTextIndex); // 2- Reset
             }
-            else if (Input.GetKeyDown(KeyCode.N))
+            else if (Input.GetButtonDown("A Button"))
             {
                 currentDialogTextIndex++;
                 dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[currentDialogTextIndex].dialogText;
@@ -112,21 +90,6 @@ public class DialogLoader : MonoBehaviour
         dialog.GetComponent<Dialog>().textComponent.text = "";
         player.GetComponent<PlayerMovement>().moveSpeed = 5f;
     }
-
-    // 3- Substitute with selecting the corrrsponding Dialog Text Set
-    //    Require object id and decision point id
-    //    Hard Code Destinations
-    /*
-    public int getDialog(int id)
-    {
-        if (id == 0)
-            return 0;
-        if (id == 2)
-            return 5;
-
-        return dialog.GetComponent<Dialog>().dialogTextSetList.Length - 1;
-    }
-    */
 
     public int getDialog(int objId, int decPointId)
     {

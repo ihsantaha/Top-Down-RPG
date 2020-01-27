@@ -19,6 +19,7 @@ TagManager:
   - ReturnTab
   - StartButton
   - QuitButton
+  - RestartButton
   layers:
   - Default
   - TransparentFX

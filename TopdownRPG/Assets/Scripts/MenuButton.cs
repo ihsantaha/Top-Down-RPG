@@ -27,7 +27,7 @@ public class MenuButton : MonoBehaviour
     public void OpenMenuFromKey()
     {
         StaticClass.CurrentPosition = player.transform.position;
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M) || Input.GetButtonDown("Start Button"))
             SceneManager.LoadSceneAsync(3);
     }
 }
