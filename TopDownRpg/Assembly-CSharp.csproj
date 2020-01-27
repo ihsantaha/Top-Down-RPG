@@ -55,16 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Models\DynamicTextClass.cs" />
      <Compile Include="Assets\Models\StaticClass.cs" />
      <Compile Include="Assets\Scripts\Boundaries.cs" />
      <Compile Include="Assets\Scripts\Dialog.cs" />
      <Compile Include="Assets\Scripts\DialogLoader.cs" />
-     <Compile Include="Assets\Scripts\DynamicText.cs" />
+     <Compile Include="Assets\Scripts\DialogTextSet.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\InitialPosition.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MenuButton.cs" />
+     <Compile Include="Assets\Scripts\MenuControllerHandler.cs" />
      <Compile Include="Assets\Scripts\ObjectID.cs" />
      <Compile Include="Assets\Scripts\Options.cs" />
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />

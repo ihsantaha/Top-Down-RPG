@@ -10,21 +10,23 @@ public class DialogLoader : MonoBehaviour
     public bool activate;
     public bool currentStateIsOpen;
     public bool decisionPoint;
-    public int currentDialogTextIndex;
-    public int objectID;
+    int currentDialogTextIndex;
+    int objectID;
+    int decisionPointID;
 
     void Start()
     {
+        decisionPointID = 0;
         player = GameObject.FindGameObjectWithTag("Player");
         dialogBox = GameObject.FindGameObjectWithTag("DialogBox");
-        dialogBox.GetComponent<Transform>().position = Vector2.right * 1000;
+        dialogBox.GetComponent<Transform>().position = new Vector3(1000, -3, 0);
         objectID = GetComponent<ObjectID>().ID;
     }
 
     void Update()
     {
         IsOpenable();
-        OpenDialog(objectID);
+        OpenDialog(objectID, decisionPointID);
         ManageDialog();
     }
 
@@ -38,18 +40,23 @@ public class DialogLoader : MonoBehaviour
         return (playerHitFromLeft.collider != null || playerHitFromTop.collider != null || playerHitFromRight.collider != null || playerHitFromBottom.collider != null) ? true : false;
     }
 
-    public void OpenDialog(int objID)
+    public void OpenDialog(int objID, int decPointID)
     {
-        var dialogTextSet = dialog.GetComponent<Dialog>().dialogTextSetList[getDialog(objectID)];
+        var dialogTextSet = dialog.GetComponent<Dialog>().dialogTextSetList[getDialog(objID,decPointID)];
 
-        if (IsOpenable() && !currentStateIsOpen && Input.GetKeyDown(KeyCode.X))
+        if (IsOpenable() && !currentStateIsOpen && Input.GetButton("X Button"))
         {
             currentStateIsOpen = true;
-            currentDialogTextIndex = getDialog(objectID);
-            dialogBox.GetComponent<Transform>().position = Vector2.zero;
-            Instantiate(dialog, Vector3.zero, transform.rotation);
+            currentDialogTextIndex = getDialog(objectID, decPointID);
+
+            if (decisionPointID == 0)
+            {
+                player.GetComponent<PlayerMovement>().moveSpeed = 0;
+                dialogBox.GetComponent<Transform>().position = new Vector3(0, -3.5f, 0);
+                Instantiate(dialog, Vector3.zero, transform.rotation);
+            }
+
             dialog.GetComponent<Dialog>().textComponent.text = dialogTextSet.dialogText;
-            player.GetComponent<PlayerMovement>().moveSpeed = 0;
         }
     }
 
@@ -59,16 +66,16 @@ public class DialogLoader : MonoBehaviour
 
         if (currentStateIsOpen)
         {
-            if (dialogTextSetList[currentDialogTextIndex].isEndPoint && Input.GetKeyDown(KeyCode.N))
+            if (dialogTextSetList[currentDialogTextIndex].isEndPoint && Input.GetButtonDown("A Button"))
             {
                 CloseDialog();
             }
-            else if (dialogTextSetList[currentDialogTextIndex].isDecisionPoint && Input.GetKeyDown(KeyCode.O))
+            else if (dialogTextSetList[currentDialogTextIndex].isDecisionPoint && Input.GetButtonDown("X Button"))
             {
-                dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[getDialog(currentDialogTextIndex)].dialogText;
-                currentDialogTextIndex = getDialog(currentDialogTextIndex);
+                dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[getDialog(objectID, currentDialogTextIndex)].dialogText;
+                currentDialogTextIndex = getDialog(objectID, currentDialogTextIndex);
             }
-            else if (Input.GetKeyDown(KeyCode.N))
+            else if (Input.GetButtonDown("A Button"))
             {
                 currentDialogTextIndex++;
                 dialog.GetComponent<Dialog>().textComponent.text = dialogTextSetList[currentDialogTextIndex].dialogText;
@@ -84,14 +91,18 @@ public class DialogLoader : MonoBehaviour
         player.GetComponent<PlayerMovement>().moveSpeed = 5f;
     }
 
-    // Dialog object IDs
-    public int getDialog(int id)
+    public int getDialog(int objId, int decPointId)
     {
-        if (id == 0)
+        if (objId == 0)
             return 0;
-        if (id == 2)
-            return 5;
-
+        if (objId == 1)
+        {
+            if (decPointId == 0)
+                return 0;
+            if (decPointId == 2)
+                return 5;
+        }
+            
         return dialog.GetComponent<Dialog>().dialogTextSetList.Length - 1;
     }
 }
