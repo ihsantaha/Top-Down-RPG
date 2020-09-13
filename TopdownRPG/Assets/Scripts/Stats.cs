@@ -21,11 +21,19 @@ public class Stats : MonoBehaviour
 
     public void ViewStats()
     {
+        print(stats.activeSelf);
         stats.SetActive(true);
     }
 
     public void DisableViewStats()
     {
         stats.SetActive(false);
+    }
+
+    public void SetActiveSubMenu()
+    {
+        StaticClass.statsSelected = true;
+        StaticClass.skillsSelected = false;
+        StaticClass.invntrySelected = false;
     }
 }
