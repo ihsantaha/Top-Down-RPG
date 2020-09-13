@@ -455,6 +455,11 @@ PrefabInstance:
       propertyPath: menuGameObjects.Array.data[1]
       value: 
       objectReference: {fileID: 349751112}
+    - target: {fileID: 5850554004994360940, guid: 75325e112807e5e49ae7eece20e60572,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5850554004994360941, guid: 75325e112807e5e49ae7eece20e60572,
         type: 3}
       propertyPath: m_Name

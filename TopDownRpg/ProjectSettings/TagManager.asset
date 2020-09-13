@@ -20,6 +20,10 @@ TagManager:
   - StartButton
   - QuitButton
   - RestartButton
+  - Stats
+  - MenuControllerHandler
+  - Skills
+  - SkillList
   layers:
   - Default
   - TransparentFX

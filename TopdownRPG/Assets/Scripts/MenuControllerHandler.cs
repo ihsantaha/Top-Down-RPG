@@ -7,7 +7,7 @@ public class MenuControllerHandler : MonoBehaviour
 {
     public GameObject[] menuGameObjects;
     public bool horizontal;
-    bool[] menuItemSelected;
+    public bool[] menuItemSelected;
     bool clickedNegative, clickedPositive, fromFrontDoor, fromBackDoor;
     bool positiveMovement, negativeMovement;
     float horizontalInput, verticalInput;
@@ -44,6 +44,7 @@ public class MenuControllerHandler : MonoBehaviour
         {
             if (fromFrontDoor)
             {
+                fromBackDoor = false;
                 StartCoroutine(Axis("positive"));
                 fromFrontDoor = false;
                 menuItemSelected[0] = true;
@@ -72,6 +73,7 @@ public class MenuControllerHandler : MonoBehaviour
         {
             if (fromBackDoor)
             {
+                fromFrontDoor = false;
                 StartCoroutine(Axis("negative"));
                 fromBackDoor = false;
                 menuItemSelected[menuGameObjects.Length - 1] = true;

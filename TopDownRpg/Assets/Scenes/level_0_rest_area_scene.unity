@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 333285444}
   - component: {fileID: 333285443}
   m_Layer: 0
-  m_Name: Tent Grid
+  m_Name: Tent Pieces Layer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1816,7 +1816,7 @@ Transform:
   - {fileID: 1192635325}
   - {fileID: 1275305442}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351856115
 GameObject:
@@ -1829,7 +1829,7 @@ GameObject:
   - component: {fileID: 351856117}
   - component: {fileID: 351856116}
   m_Layer: 0
-  m_Name: Objects Grid
+  m_Name: Items Layer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1955,7 +1955,7 @@ GameObject:
   - component: {fileID: 427566728}
   - component: {fileID: 427566727}
   m_Layer: 0
-  m_Name: MenuButton
+  m_Name: Menu Button Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1986,7 +1986,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &484424896
 PrefabInstance:
@@ -2170,7 +2170,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 0
+  m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
@@ -2291,7 +2291,7 @@ GameObject:
   - component: {fileID: 611410144}
   - component: {fileID: 611410143}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: Event System Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2343,7 +2343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &666435368 stripped
 Transform:
@@ -2368,7 +2368,7 @@ GameObject:
   - component: {fileID: 670169509}
   - component: {fileID: 670169508}
   m_Layer: 0
-  m_Name: Terrain Grid
+  m_Name: Terrain Layer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2399,7 +2399,7 @@ Transform:
   m_Children:
   - {fileID: 1803629851}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &710972329 stripped
 GameObject:
@@ -2891,7 +2891,7 @@ GameObject:
   - component: {fileID: 1192635330}
   - component: {fileID: 1192635329}
   m_Layer: 0
-  m_Name: Tent Tilemap
+  m_Name: Tent Pieces Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3626,7 +3626,7 @@ Transform:
   m_Children:
   - {fileID: 1516005281}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1461928982
 PrefabInstance:
@@ -4010,7 +4010,7 @@ PrefabInstance:
     - target: {fileID: 8073363211932794513, guid: d2c88b39d09b0a34c98b45ac7dda0687,
         type: 3}
       propertyPath: m_Name
-      value: Exit
+      value: Tent Entrance
       objectReference: {fileID: 0}
     - target: {fileID: 8073363211932794513, guid: d2c88b39d09b0a34c98b45ac7dda0687,
         type: 3}
@@ -6059,7 +6059,7 @@ PrefabInstance:
     - target: {fileID: 439350190701880348, guid: bd2f770cffeacbe4ea9f59b1189b3836,
         type: 3}
       propertyPath: m_Name
-      value: DialogBox
+      value: Main Dialog Box
       objectReference: {fileID: 0}
     - target: {fileID: 439350190701880349, guid: bd2f770cffeacbe4ea9f59b1189b3836,
         type: 3}
@@ -6099,7 +6099,7 @@ PrefabInstance:
     - target: {fileID: 439350190701880349, guid: bd2f770cffeacbe4ea9f59b1189b3836,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 439350190701880349, guid: bd2f770cffeacbe4ea9f59b1189b3836,
         type: 3}
@@ -6139,7 +6139,7 @@ GameObject:
   - component: {fileID: 1936147660}
   - component: {fileID: 1936147659}
   m_Layer: 0
-  m_Name: SceneLoader
+  m_Name: Scene Loader Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6169,7 +6169,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1996877276 stripped
 Transform:
@@ -6338,6 +6338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bed
       objectReference: {fileID: 0}
+    - target: {fileID: 1257314441901449485, guid: 57d2dd460b48ed142a33dc513c48420d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d2dd460b48ed142a33dc513c48420d, type: 3}
 --- !u!4 &2068929910 stripped
@@ -6438,6 +6443,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bed
       objectReference: {fileID: 0}
+    - target: {fileID: 1257314441901449485, guid: 57d2dd460b48ed142a33dc513c48420d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d2dd460b48ed142a33dc513c48420d, type: 3}
 --- !u!1001 &5299705291790937753
@@ -6500,7 +6510,7 @@ PrefabInstance:
     - target: {fileID: 5299705291356040151, guid: 8ff9ab2ef352dc34788262fdc724192c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5299705291356040151, guid: 8ff9ab2ef352dc34788262fdc724192c,
         type: 3}
@@ -6535,6 +6545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172897985381152864, guid: cf6f79d09ebaabd46b1f98fd33786cf7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3125092110543651869, guid: cf6f79d09ebaabd46b1f98fd33786cf7,
         type: 3}
@@ -6660,6 +6675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6529505831239443927, guid: cf6f79d09ebaabd46b1f98fd33786cf7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6f79d09ebaabd46b1f98fd33786cf7, type: 3}
